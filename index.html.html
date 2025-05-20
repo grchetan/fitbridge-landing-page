@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Bridge - 7-Day Detox & 150+ Indian Recipes Bundle</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#4f7942", secondary: "#ff7f50" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <style>
+      :where([class^="ri-"])::before {
+        content: "\f3c2";
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .hero-gradient {
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.95) 0%,
+          rgba(255, 255, 255, 0.8) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a href="#" class="text-3xl font-['Pacifico'] text-primary">
+          <img src="assets/images/newlogo.png" class="w-24" alt="logo" />
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="#" class="text-gray-700 hover:text-primary font-medium"
+            >Home</a
+          >
+          <a href="#" class="text-gray-700 hover:text-primary font-medium"
+            >Recipes</a
+          >
+          <a href="#" class="text-gray-700 hover:text-primary font-medium"
+            >Plans</a
+          >
+          <a href="#" class="text-gray-700 hover:text-primary font-medium"
+            >About</a
+          >
+          <a href="#" class="text-gray-700 hover:text-primary font-medium"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- CTA + Hamburger -->
+        <div class="flex items-center space-x-4">
+          <a
+            href="#cta"
+            class="hidden md:block bg-primary text-white px-6 py-2 rounded-md font-medium hover:bg-opacity-90 transition whitespace-nowrap"
+            >Get Started</a
+          >
+          <!-- Hamburger Button -->
+          <button
+            id="menuToggle"
+            class="md:hidden w-10 h-10 flex items-center justify-center"
+          >
+            <i id="menuIcon" class="ri-menu-line text-2xl text-gray-700"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white shadow-md px-4 pt-4 pb-6 space-y-3"
+      >
+        <a href="#" class="block text-gray-700 hover:text-primary font-medium"
+          >Home</a
+        >
+        <a href="#" class="block text-gray-700 hover:text-primary font-medium"
+          >Recipes</a
+        >
+        <a href="#" class="block text-gray-700 hover:text-primary font-medium"
+          >Plans</a
+        >
+        <a href="#" class="block text-gray-700 hover:text-primary font-medium"
+          >About</a
+        >
+        <a href="#" class="block text-gray-700 hover:text-primary font-medium"
+          >Contact</a
+        >
+        <a
+          href="#cta"
+          class="block text-center bg-primary text-white px-6 py-2 rounded-md font-medium hover:bg-opacity-90 transition"
+          >Get Started</a
+        >
+      </div>
+    </header>
+
+    <!-- JS to toggle mobile menu -->
+    <script>
+      const toggleBtn = document.getElementById("menuToggle");
+      const menu = document.getElementById("mobileMenu");
+      const icon = document.getElementById("menuIcon");
+
+      toggleBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        // Toggle icon
+        if (menu.classList.contains("hidden")) {
+          icon.classList.remove("ri-close-line");
+          icon.classList.add("ri-menu-line");
+        } else {
+          icon.classList.remove("ri-menu-line");
+          icon.classList.add("ri-close-line");
+        }
+      });
+    </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Hero Section -->
+    <section
+      class="relative w-full h-[100vh] bg-cover bg-center flex items-center"
+      style="background-image: url('assets/images/home-bg.jpg')"
+    >
+      <div class="absolute inset-0 hero-gradient"></div>
+      <div class="container mx-auto px-4 py-20 md:py-28 relative z-10">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+            7-Day Detox & 150+ Indian Recipes Bundle
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-700 mb-6">
+            🌿 Kickstart Your Health Journey with Easy, Delicious & Desi
+            Nutrition! 🇮🇳
+          </p>
+          <p class="text-lg text-gray-600 mb-8">
+            Feeling bloated, low on energy, or stuck in unhealthy eating habits?
+            It's time to reset your body and boost your energy – in just 7 days!
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-8">
+            <a
+              href="#cta"
+              class="bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition text-center whitespace-nowrap"
+              >Download Now</a
+            >
+            <a
+              href="#bundle"
+              class="bg-white text-primary border border-primary px-8 py-3 !rounded-button font-medium hover:bg-gray-50 transition text-center whitespace-nowrap"
+              >Get the Plan</a
+            >
+          </div>
+
+          <div class="flex flex-wrap gap-4 mb-4">
+            <div
+              class="flex items-center bg-white bg-opacity-90 px-4 py-2 rounded"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center mr-2 text-primary"
+              >
+                <i class="ri-check-line ri-lg"></i>
+              </div>
+              <span class="text-sm">Instant Access</span>
+            </div>
+            <div
+              class="flex items-center bg-white bg-opacity-90 px-4 py-2 rounded"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center mr-2 text-primary"
+              >
+                <i class="ri-check-line ri-lg"></i>
+              </div>
+              <span class="text-sm">Easy to Follow</span>
+            </div>
+            <div
+              class="flex items-center bg-white bg-opacity-90 px-4 py-2 rounded"
+            >
+              <div
+                class="w-6 h-6 flex items-center justify-center mr-2 text-primary"
+              >
+                <i class="ri-check-line ri-lg"></i>
+              </div>
+              <span class="text-sm">Bonus Guides Included</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You'll Get Section -->
+    <section id="bundle" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            📦 What You'll Get
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Everything you need to transform your health with delicious Indian
+            cuisine
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4"
+            >
+              <i class="ri-calendar-line text-primary ri-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">7-Day Detox Plan</h3>
+            <p class="text-gray-600 mb-4">
+              Complete day-by-day meal plan with 1200–1300 calories per day,
+              perfectly balanced for optimal nutrition and detoxification.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700"
+                  >Breakfast, lunch, dinner & snacks</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700">Calorie-counted portions</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700">Easy shopping list included</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4"
+            >
+              <i class="ri-book-open-line text-primary ri-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              150+ Healthy Indian Recipes
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Extensive collection of vegetarian and non-vegetarian recipes from
+              all regions of India, reimagined for better health.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700"
+                  >Regional favorites with healthy twists</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700"
+                  >Quick 20-minute recipes included</span
+                >
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700"
+                  >Nutritional information for each dish</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4"
+            >
+              <i class="ri-plant-line text-primary ri-xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Lifestyle & Wellness Tips
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Holistic approach to health with daily herbal drinks, detox
+              waters, and practical lifestyle guidance.
+            </p>
+            <ul class="space-y-2">
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700">Morning ritual guide</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700">Digestion & bloating remedies</span>
+              </li>
+              <li class="flex items-start">
+                <div
+                  class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                >
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700">Energy-boosting techniques</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why You Need a Detox -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            💡 Why Do You Need a Detox?
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Reset your body and mind with our carefully crafted detox program
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-sm flex">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-red-100 rounded-full mr-4 flex-shrink-0"
+            >
+              <i class="ri-water-flash-line text-red-500 ri-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2">
+                Reduces Bloating & Water Retention
+              </h3>
+              <p class="text-gray-600">
+                Say goodbye to that uncomfortable bloated feeling with our
+                specially designed meals.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm flex">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-full mr-4 flex-shrink-0"
+            >
+              <i class="ri-battery-charge-line text-yellow-500 ri-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2">
+                Boosts Metabolism & Energy
+              </h3>
+              <p class="text-gray-600">
+                Experience renewed vitality and improved metabolic function
+                throughout the day.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm flex">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full mr-4 flex-shrink-0"
+            >
+              <i class="ri-heart-pulse-line text-green-500 ri-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2">
+                Supports Digestion & Gut Health
+              </h3>
+              <p class="text-gray-600">
+                Nourish your gut microbiome with fiber-rich foods and
+                traditional spices.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm flex">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-purple-100 rounded-full mr-4 flex-shrink-0"
+            >
+              <i class="ri-sun-line text-purple-500 ri-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2">
+                Improves Skin Glow & Immunity
+              </h3>
+              <p class="text-gray-600">
+                Radiate health from within as your skin clears and your immune
+                system strengthens.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm flex">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-full mr-4 flex-shrink-0"
+            >
+              <i class="ri-forbid-line text-blue-500 ri-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2">
+                Cuts Sugar Cravings Naturally
+              </h3>
+              <p class="text-gray-600">
+                Reset your taste buds and reduce unhealthy cravings with
+                balanced nutrition.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm flex">
+            <div
+              class="w-12 h-12 flex items-center justify-center bg-pink-100 rounded-full mr-4 flex-shrink-0"
+            >
+              <i class="ri-mental-health-line text-pink-500 ri-lg"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-2">
+                Enhances Mental Clarity
+              </h3>
+              <p class="text-gray-600">
+                Experience improved focus and mental performance with clean
+                nutrition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who Is This Plan For -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            👩‍🍳 Who Is This Plan For?
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Our program is specially designed for these individuals
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="
+                background-image: url('https://readdy.ai/api/search-image?query=Professional%20Indian%20woman%20in%20business%20casual%20attire%20looking%20at%20healthy%20food%20in%20her%20kitchen%2C%20preparing%20meal%2C%20natural%20lighting%2C%20lifestyle%20photography&width=600&height=400&seq=2&orientation=landscape');
+              "
+            ></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Working Professionals</h3>
+              <p class="text-gray-600 mb-4">
+                Busy career women aged 21-45 who need quick, nutritious meals
+                that fit into hectic schedules.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                  >
+                    <i class="ri-time-line"></i>
+                  </div>
+                  <span class="text-gray-700"
+                    >Time-saving recipes under 20 minutes</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                  >
+                    <i class="ri-calendar-check-line"></i>
+                  </div>
+                  <span class="text-gray-700"
+                    >Meal prep guides for the week</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="
+                background-image: url('https://readdy.ai/api/search-image?query=Indian%20homemaker%20in%20modern%20kitchen%20arranging%20healthy%20ingredients%2C%20preparing%20nutritious%20meal%2C%20warm%20lighting%2C%20lifestyle%20photography&width=600&height=400&seq=3&orientation=landscape');
+              "
+            ></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Homemakers</h3>
+              <p class="text-gray-600 mb-4">
+                Women managing households who want to introduce healthier
+                versions of family favorites.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                  >
+                    <i class="ri-group-line"></i>
+                  </div>
+                  <span class="text-gray-700"
+                    >Family-friendly recipe adaptations</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                  >
+                    <i class="ri-store-line"></i>
+                  </div>
+                  <span class="text-gray-700"
+                    >Budget-friendly grocery guides</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="bg-gray-50 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="
+                background-image: url('https://readdy.ai/api/search-image?query=Young%20Indian%20woman%20looking%20at%20recipe%20on%20phone%20while%20preparing%20healthy%20meal%20in%20kitchen%2C%20beginner%20cook%2C%20natural%20lighting%2C%20lifestyle%20photography&width=600&height=400&seq=4&orientation=landscape');
+              "
+            ></div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-3">Health Beginners</h3>
+              <p class="text-gray-600 mb-4">
+                Those new to healthy eating who want simple, familiar foods that
+                support their wellness journey.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                  >
+                    <i class="ri-book-read-line"></i>
+                  </div>
+                  <span class="text-gray-700"
+                    >Step-by-step cooking instructions</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <div
+                    class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary"
+                  >
+                    <i class="ri-seedling-line"></i>
+                  </div>
+                  <span class="text-gray-700"
+                    >Gradual introduction to healthy habits</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipe Showcase -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            🍛 What's Inside the Recipe Bundle
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            150+ Recipes from all Indian regions, reimagined for better health
+          </p>
+        </div>
+
+        <!-- <div class="mb-8">
+          <div class="flex justify-center mb-6">
+            <div class="inline-flex bg-gray-100 p-1 rounded-full">
+              <button
+                class="px-4 py-2 rounded-full bg-primary text-white whitespace-nowrap"
+              >
+                All Recipes
+              </button>
+              <button
+                class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+              >
+                South Indian
+              </button>
+              <button
+                class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+              >
+                North Indian
+              </button>
+              <button
+                class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+              >
+                Quick Meals
+              </button>
+              <button
+                class="px-4 py-2 rounded-full text-gray-700 hover:bg-gray-200 whitespace-nowrap"
+              >
+                Drinks
+              </button>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="
+                background-image: url('https://readdy.ai/api/search-image?query=Healthy%20South%20Indian%20masala%20dosa%20with%20coconut%20chutney%20and%20sambar%2C%20low%20oil%20version%2C%20served%20on%20banana%20leaf%2C%20natural%20lighting%2C%20top%20view%20food%20photography&width=500&height=400&seq=5&orientation=landscape');
+              "
+            ></div>
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span
+                  class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded"
+                  >South Indian</span
+                >
+                <span class="text-gray-600 text-sm">280 kcal</span>
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Ragi Masala Dosa</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Nutritious finger millet dosa with vegetable filling
+              </p>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center text-gray-500 text-sm">
+                  <i class="ri-time-line mr-1"></i>
+                  <span>25 mins</span>
+                </div>
+                <div class="flex items-center text-gray-500 text-sm">
+                  <i class="ri-fire-line mr-1"></i>
+                  <span>Low-Oil</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="
+                background-image: url('https://readdy.ai/api/search-image?query=Healthy%20North%20Indian%20vegetable%20poha%20with%20peanuts%2C%20coriander%2C%20and%20lemon%2C%20served%20in%20white%20bowl%2C%20natural%20lighting%2C%20top%20view%20food%20photography&width=500&height=400&seq=6&orientation=landscape');
+              "
+            ></div>
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span
+                  class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded"
+                  >North Indian</span
+                >
+                <span class="text-gray-600 text-sm">220 kcal</span>
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Vegetable Poha</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Flattened rice with vegetables and peanuts
+              </p>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center text-gray-500 text-sm">
+                  <i class="ri-time-line mr-1"></i>
+                  <span>15 mins</span>
+                </div>
+                <div class="flex items-center text-gray-500 text-sm">
+                  <i class="ri-seedling-line mr-1"></i>
+                  <span>High Protein</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="
+                background-image: url('https://readdy.ai/api/search-image?query=Healthy%20green%20smoothie%20with%20spinach%2C%20cucumber%2C%20mint%2C%20apple%20in%20glass%20with%20straw%2C%20natural%20lighting%2C%20side%20view%20food%20photography&width=500&height=400&seq=7&orientation=landscape');
+              "
+            ></div>
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+                  >Drinks</span
+                >
+                <span class="text-gray-600 text-sm">120 kcal</span>
+              </div>
+              <h3 class="text-lg font-semibold mb-1">Green Detox Smoothie</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Spinach, cucumber, mint and apple blend
+              </p>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center text-gray-500 text-sm">
+                  <i class="ri-time-line mr-1"></i>
+                  <span>5 mins</span>
+                </div>
+                <div class="flex items-center text-gray-500 text-sm">
+                  <i class="ri-leaf-line mr-1"></i>
+                  <span>Detox</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
+          >
+            <div
+              class="h-48 bg-cover bg-center"
+              style="
+                background-image: url('https://readdy.ai/api/search-image?query=Healthy%20Indian%20dal%20tadka%20in%20white%20bowl%20with%20brown%20rice%2C%20garnished%20with%20coriander%2C%20natural%20lighting%2C%20top%20view%20food%20photography&width=500&height=400&seq=8&orientation=landscape');
+              "
+            ></div>
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-2">
+                <span
+                  class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded"
+                  >Quick Meals</span
+                >
+                <span class="text-gray-600 text-sm">250 kcal</span>
+              </div>
+              <h3 class="text-lg font-semibold mb-1">One-Pot Dal Tadka</h3>
+              <p class="text-gray-600 text-sm mb-3">
+                Protein-rich lentils with aromatic spices
+              </p>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center text-gray-500 text-sm">
+                  <i class="ri-time-line mr-1"></i>
+                  <span>20 mins</span>
+                </div>
+                <div class="flex items-center text-gray-500 text-sm">
+                  <i class="ri-heart-line mr-1"></i>
+                  <span>Heart-Healthy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-10">
+          <a
+            href="#cta"
+            class="inline-block bg-primary text-white px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap"
+            >View All 150+ Recipes</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Bonus Content -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div
+          class="max-w-4xl mx-auto bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg p-8"
+        >
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/3 mb-6 md:mb-0 text-center">
+              <div
+                class="w-24 h-24 mx-auto flex items-center justify-center bg-white rounded-full shadow-md"
+              >
+                <i class="ri-gift-line text-primary ri-3x"></i>
+              </div>
+            </div>
+            <div class="md:w-2/3 md:pl-8">
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                🎁 Bonus Content
+              </h2>
+              <p class="text-gray-600 mb-6">
+                When you purchase the 7-Day Detox & Recipe Bundle, you'll also
+                receive these exclusive bonuses:
+              </p>
+
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 bg-white rounded-full text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold">Free Printable Meal Tracker</h3>
+                    <p class="text-gray-600 text-sm">
+                      Track your progress and stay accountable with our
+                      beautifully designed meal journal.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 bg-white rounded-full text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold">Weekly Grocery Planner</h3>
+                    <p class="text-gray-600 text-sm">
+                      Save time and money with our organized shopping lists for
+                      each week.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 bg-white rounded-full text-primary"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold">Morning Ritual Guide</h3>
+                    <p class="text-gray-600 text-sm">
+                      Start your day right with our step-by-step morning routine
+                      for optimal gut health.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            🙋‍♀️ Frequently Asked Questions
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Find answers to common questions about our detox plan
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="space-y-4">
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <button
+                class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+                data-target="faq1"
+              >
+                <span class="font-semibold text-gray-800"
+                  >Q1 Can I follow this if I have a medical condition?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line text-gray-500 ri-lg faq-icon"
+                ></i>
+              </button>
+              <div id="faq1" class="faq-content hidden px-6 pb-6">
+                <p class="text-gray-600">
+                  It's a general plan, but we advise checking with your doctor
+                  for serious health issues.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <button
+                class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+                data-target="faq2"
+              >
+                <span class="font-semibold text-gray-800"
+                  >Q2 Is this suitable for vegetarians?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line text-gray-500 ri-lg faq-icon"
+                ></i>
+              </button>
+              <div id="faq2" class="faq-content hidden px-6 pb-6">
+                <p class="text-gray-600">
+                  Yes! It has both vegetarian and non-veg options.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <button
+                class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+                data-target="faq3"
+              >
+                <span class="font-semibold text-gray-800"
+                  >Q3 Is it safe for beginners or working women?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line text-gray-500 ri-lg faq-icon"
+                ></i>
+              </button>
+              <div id="faq3" class="faq-content hidden px-6 pb-6">
+                <p class="text-gray-600">
+                  Absolutely. It’s easy, home-cooked food with Indian
+                  ingredients.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <button
+                class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+                data-target="faq4"
+              >
+                <span class="font-semibold text-gray-800"
+                  >Q4: Can I download it on my phone?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line text-gray-500 ri-lg faq-icon"
+                ></i>
+              </button>
+              <div id="faq4" class="faq-content hidden px-6 pb-6">
+                <p class="text-gray-600">
+                  Yes, it's mobile and desktop friendly.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+              <button
+                class="faq-toggle w-full flex justify-between items-center p-6 text-left"
+                data-target="faq5"
+              >
+                <span class="font-semibold text-gray-800"
+                  >Q5 Will I need exotic ingredients?</span
+                >
+                <i
+                  class="ri-arrow-down-s-line text-gray-500 ri-lg faq-icon"
+                ></i>
+              </button>
+              <div id="faq5" class="faq-content hidden px-6 pb-6">
+                <p class="text-gray-600">
+                  No. We use basic Indian kitchen items.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section id="cta" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div
+          class="max-w-4xl mx-auto bg-gradient-to-r from-primary to-primary/80 rounded-lg overflow-hidden shadow-lg"
+        >
+          <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 p-8 md:p-12">
+              <h2 class="text-3xl font-bold text-white mb-4">
+                Ready to Feel Lighter, Healthier & More Energetic?
+              </h2>
+              <p class="text-white/90 mb-6">
+                Start your transformation today with our 7-Day Detox & 150+
+                Indian Recipes Bundle.
+              </p>
+
+              <div class="mb-8">
+                <div class="flex items-center mb-3">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 bg-white/20 rounded-full text-white"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span class="text-white">Instant Digital Access</span>
+                </div>
+                <div class="flex items-center mb-3">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 bg-white/20 rounded-full text-white"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span class="text-white">Mobile & Print Friendly</span>
+                </div>
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 flex items-center justify-center mr-2 bg-white/20 rounded-full text-white"
+                  >
+                    <i class="ri-check-line"></i>
+                  </div>
+                  <span class="text-white">Free Bonus Materials</span>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <div class="flex items-end mb-2">
+                  <span class="text-white/80 line-through text-lg">₹1,999</span>
+                  <span class="text-white text-3xl font-bold ml-2">₹999</span>
+                </div>
+                <span
+                  class="inline-block bg-white text-primary text-sm font-medium px-3 py-1 rounded"
+                  >50% OFF - Limited Time Offer</span
+                >
+              </div>
+
+              <a
+                href="#"
+                class="block w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-center px-6 py-3 rounded-full font-semibold shadow-lg hover:opacity-90 transition duration-300 ease-in-out whitespace-nowrap"
+                >Get Instant Access
+              </a>
+            </div>
+
+            <div
+              class="md:w-1/2 bg-cover bg-center"
+              style="
+                background-image: url('https://readdy.ai/api/search-image?query=Beautiful%20spread%20of%20healthy%20Indian%20dishes%20on%20a%20table%2C%20including%20colorful%20salads%2C%20lentil%20dishes%2C%20flatbreads%2C%20and%20detox%20drinks.%20Bright%2C%20airy%20photography%20with%20natural%20lighting.&width=800&height=900&seq=9&orientation=portrait');
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto mt-8 text-center">
+          <div class="flex flex-wrap justify-center gap-6 mb-6">
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 flex items-center justify-center mr-2 text-gray-500"
+              >
+                <i class="ri-secure-payment-line ri-lg"></i>
+              </div>
+              <span class="text-gray-600">Secure Payment</span>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 flex items-center justify-center mr-2 text-gray-500"
+              >
+                <i class="ri-refund-2-line ri-lg"></i>
+              </div>
+              <span class="text-gray-600">30-Day Money Back</span>
+            </div>
+            <div class="flex items-center">
+              <div
+                class="w-10 h-10 flex items-center justify-center mr-2 text-gray-500"
+              >
+                <i class="ri-customer-service-2-line ri-lg"></i>
+              </div>
+              <span class="text-gray-600">24/7 Support</span>
+            </div>
+          </div>
+
+          <!-- <div class="flex justify-center space-x-4">
+            <div
+              class="w-10 h-10 flex items-center justify-center text-gray-500"
+            >
+              <i class="ri-visa-line ri-xl"></i>
+            </div>
+            <div
+              class="w-10 h-10 flex items-center justify-center text-gray-500"
+            >
+              <i class="ri-mastercard-line ri-xl"></i>
+            </div>
+            <div
+              class="w-10 h-10 flex items-center justify-center text-gray-500"
+            >
+              <i class="ri-paypal-line ri-xl"></i>
+            </div>
+            <div
+              class="w-10 h-10 flex items-center justify-center text-gray-500"
+            >
+              <i class="ri-amazon-pay-line ri-xl"></i>
+            </div>
+            <div
+              class="w-10 h-10 flex items-center justify-center text-gray-500"
+            >
+              <i class="ri-google-pay-line ri-xl"></i>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            What Our Customers Say
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Real results from real people following our detox plan
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "I've tried many detox plans before, but this one actually worked
+              with my Indian lifestyle. The recipes were delicious and I didn't
+              feel like I was on a diet at all. Lost 3 kgs in a week and the
+              bloating is completely gone!"
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center text-gray-500"
+              >
+                <i class="ri-user-line ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Priya Sharma</h4>
+                <p class="text-gray-500 text-sm">
+                  Marketing Professional, Mumbai
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "As a working mom, I never thought I'd find time for healthy
+              cooking. These recipes are so quick and use ingredients I already
+              had in my kitchen. My family loves the food and doesn't even
+              realize it's 'healthy'! My energy levels have improved
+              dramatically."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center text-gray-500"
+              >
+                <i class="ri-user-line ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Anita Desai</h4>
+                <p class="text-gray-500 text-sm">
+                  Software Engineer, Bangalore
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 flex">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-half-fill"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "I was skeptical about another diet plan, but this one is
+              different. The morning ritual guide alone was worth the price! My
+              digestion has improved so much, and I'm sleeping better. The
+              recipes are simple but flavorful. Highly recommend for beginners."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gray-200 rounded-full mr-4 flex items-center justify-center text-gray-500"
+              >
+                <i class="ri-user-line ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold">Rahul Mehta</h4>
+                <p class="text-gray-500 text-sm">Entrepreneur, Delhi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <a
+              href="#"
+              class="text-2xl font-['Pacifico'] text-white mb-4 inline-block"
+              ><img
+                src="assets/images/logo.png"
+                class="w-[12rem] rounded-lg"
+                alt="logo"
+            /></a>
+            <p class="text-gray-400 mb-4">
+              Your bridge to healthier living through delicious Indian
+              nutrition.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-facebook-fill"></i>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary transition"
+              >
+                <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Recipes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Resources</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Free Recipes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Nutrition Guide</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Meal Planner</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Health Articles</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div>
+            <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+            <p class="text-gray-400 mb-4">
+              Subscribe for healthy recipes, tips and exclusive offers.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="bg-gray-800 text-white px-4 py-2 rounded-l border-none w-full text-sm"
+              />
+              <button
+                type="submit"
+                class="bg-primary text-white px-4 py-2 rounded-r !rounded-button whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div> -->
+        </div>
+
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm mb-4 md:mb-0">
+              © 2025 Fit Bridge. All rights reserved.
+            </p>
+            <div class="flex space-x-4 text-sm text-gray-400">
+              <a href="#" class="hover:text-white transition">Privacy Policy</a>
+              <a href="#" class="hover:text-white transition"
+                >Terms of Service</a
+              >
+              <a href="#" class="hover:text-white transition">Refund Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // FAQ Toggles
+        const faqToggles = document.querySelectorAll(".faq-toggle");
+
+        faqToggles.forEach((toggle) => {
+          toggle.addEventListener("click", function () {
+            const targetId = this.getAttribute("data-target");
+            const content = document.getElementById(targetId);
+            const icon = this.querySelector(".faq-icon");
+
+            if (content.classList.contains("hidden")) {
+              content.classList.remove("hidden");
+              icon.classList.remove("ri-arrow-down-s-line");
+              icon.classList.add("ri-arrow-up-s-line");
+            } else {
+              content.classList.add("hidden");
+              icon.classList.remove("ri-arrow-up-s-line");
+              icon.classList.add("ri-arrow-down-s-line");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

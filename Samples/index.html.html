@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>₹99 Detox Challenge - Transform Your Health Now!</title>
+    <meta name="description" content="Join our ₹99 Detox Challenge and transform your health with our expert-backed nutrition plan. One simple plan. One small step. Lifetime impact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#2ECC71',secondary:'#F0FFF4'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .modal {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        .custom-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%232ECC71'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 0.75rem center;
+            background-size: 1rem;
+        }
+        .custom-checkbox {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+        .custom-checkbox input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            transition: all 0.2s ease;
+        }
+        .custom-checkbox input:checked ~ .checkmark {
+            background-color: #2ECC71;
+            border-color: #2ECC71;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .custom-checkbox input:checked ~ .checkmark:after {
+            display: block;
+        }
+        .custom-switch {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 24px;
+        }
+        .custom-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #2ECC71;
+        }
+        input:checked + .slider:before {
+            transform: translateX(24px);
+        }
+        .testimonial-card {
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://readdy.ai/api/search-image?query=A%20vibrant%20and%20refreshing%20detox%20scene%20with%20various%20colorful%20fruits%2C%20vegetables%2C%20and%20detox%20drinks%20arranged%20on%20a%20clean%20white%20surface.%20The%20image%20shows%20cucumber%20slices%2C%20lemon%20wedges%2C%20mint%20leaves%2C%20berries%2C%20and%20clear%20glass%20jars%20with%20green%20and%20colorful%20detox%20smoothies.%20The%20background%20is%20bright%20and%20airy%20with%20soft%20natural%20lighting%2C%20creating%20a%20fresh%20and%20healthy%20atmosphere.%20The%20composition%20is%20balanced%20with%20plenty%20of%20space%20on%20the%20left%20side%20for%20text%20overlay.&width=1920&height=1080&seq=123456&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#benefits" class="text-gray-700 hover:text-primary transition">Benefits</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-primary transition">Testimonials</a>
+                <a href="#faq" class="text-gray-700 hover:text-primary transition">FAQ</a>
+                <button class="bg-primary text-white px-6 py-2 rounded-button font-medium hover:bg-opacity-90 transition shadow-sm whitespace-nowrap">Start Now</button>
+            </div>
+            <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                <i class="ri-menu-line ri-lg"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-[600px] flex items-center">
+        <div class="container mx-auto px-4 md:px-8 py-20 md:py-32 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">Join the ₹99 Detox Challenge – Transform Your Health Now!</h1>
+                <p class="text-xl md:text-2xl text-white mb-8 font-light">One simple plan. One small step. Lifetime impact.</p>
+                <button id="heroBtn" class="bg-primary text-white px-8 py-4 rounded-button text-lg font-semibold hover:bg-opacity-90 transition shadow-lg whitespace-nowrap">Start Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Our Detox Plan?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our scientifically-backed detox program helps you reset your body, boost energy levels, and kickstart your journey to better health.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="ri-leaf-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Natural Ingredients</h3>
+                    <p class="text-gray-600 text-center">Our detox plan uses 100% natural ingredients that help cleanse your body of toxins and promote overall wellness.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="ri-timer-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Quick Results</h3>
+                    <p class="text-gray-600 text-center">Feel the difference in just 7 days with our carefully crafted detox program designed for maximum effectiveness.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="ri-customer-service-2-line ri-2x text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-center">Expert Support</h3>
+                    <p class="text-gray-600 text-center">Get 24/7 guidance from our team of nutrition experts via WhatsApp to help you maximize your detox journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our simple 3-step process makes it easy to start your health transformation today.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">1</div>
+                    <h3 class="text-xl font-semibold mb-3">Sign Up</h3>
+                    <p class="text-gray-600">Fill out a quick form with your details and health goals.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">2</div>
+                    <h3 class="text-xl font-semibold mb-3">Make Payment</h3>
+                    <p class="text-gray-600">Complete your ₹99 payment securely through Razorpay.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mb-6 mx-auto">3</div>
+                    <h3 class="text-xl font-semibold mb-3">Get Your Plan</h3>
+                    <p class="text-gray-600">Receive your personalized detox plan instantly via email.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="howItWorksBtn" class="bg-primary text-white px-8 py-4 rounded-button text-lg font-semibold hover:bg-opacity-90 transition shadow-md whitespace-nowrap">Start Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get -->
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://readdy.ai/api/search-image?query=A%20beautifully%20arranged%20collection%20of%20detox%20ingredients%20and%20materials%20on%20a%20clean%20white%20surface.%20The%20image%20shows%20a%20detailed%207-day%20detox%20plan%20printed%20on%20high-quality%20paper%2C%20surrounded%20by%20fresh%20ingredients%20like%20cucumber%2C%20lemon%2C%20mint%2C%20berries%2C%20and%20avocado.%20Theres%20also%20a%20smartphone%20showing%20a%20WhatsApp%20chat%20with%20a%20nutrition%20expert%2C%20and%20a%20notebook%20with%20meal%20planning.%20The%20composition%20is%20clean%20and%20professional%20with%20soft%20natural%20lighting%20highlighting%20the%20vibrant%20colors%20of%20the%20fresh%20produce.%20The%20background%20is%20simple%20and%20uncluttered%20to%20emphasize%20the%20detox%20materials.&width=800&height=600&seq=123457&orientation=landscape" alt="Detox Plan Contents" class="rounded-xl shadow-lg object-cover w-full h-full object-top">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">What You'll Get For Just ₹99</h2>
+                    
+                    <div class="space-y-5">
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">7-Day Detox Meal Plan</h3>
+                                <p class="text-gray-600">A complete day-by-day guide with easy-to-follow recipes and meal timings.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">Shopping List</h3>
+                                <p class="text-gray-600">Detailed list of all ingredients needed, organized by category for easy shopping.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">24/7 WhatsApp Support</h3>
+                                <p class="text-gray-600">Direct access to our nutrition experts who will answer all your questions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">Progress Tracker</h3>
+                                <p class="text-gray-600">Digital tracker to monitor your progress and see your transformation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-6 h-6 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-1">Bonus: 10 Detox Smoothie Recipes</h3>
+                                <p class="text-gray-600">Exclusive collection of delicious and effective detox smoothies.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <button id="whatYouGetBtn" class="bg-primary text-white px-8 py-4 rounded-button text-lg font-semibold hover:bg-opacity-90 transition shadow-md whitespace-nowrap">Get Started for ₹99</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Points -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center text-primary text-3xl font-bold mb-4 mx-auto">
+                        <i class="ri-user-heart-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2">1,000+</h3>
+                    <p class="text-gray-600">Successful Transformations</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center text-primary text-3xl font-bold mb-4 mx-auto">
+                        <i class="ri-medal-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2">10+</h3>
+                    <p class="text-gray-600">Nutrition Experts</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center text-primary text-3xl font-bold mb-4 mx-auto">
+                        <i class="ri-customer-service-2-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-2">24/7</h3>
+                    <p class="text-gray-600">WhatsApp Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Here's what people who've tried our detox plan have to say.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-primary font-semibold">RP</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Riya Patel</h4>
+                            <p class="text-sm text-gray-500">Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-600">"I was skeptical about a ₹99 detox plan, but I'm amazed by the results! Lost 2kg in a week and my energy levels are through the roof. The WhatsApp support was incredibly helpful."</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-primary font-semibold">AK</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Arjun Kumar</h4>
+                            <p class="text-sm text-gray-500">Bangalore</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-half-fill"></i>
+                    </div>
+                    <p class="text-gray-600">"As a software engineer with a sedentary lifestyle, this detox plan was exactly what I needed. Simple to follow, affordable, and effective. My digestion has improved significantly."</p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-primary font-semibold">SM</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Sneha Mehta</h4>
+                            <p class="text-sm text-gray-500">Delhi</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p class="text-gray-600">"The best ₹99 I've ever spent! Not only did I feel lighter after the 7-day detox, but my skin cleared up too. I've recommended it to all my friends and family."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our detox plan.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold mb-2">What exactly is included in the ₹99 Detox Plan?</h3>
+                    <p class="text-gray-600">Our plan includes a 7-day detox meal plan, shopping list, 24/7 WhatsApp support, progress tracker, and bonus smoothie recipes. Everything you need for a successful detox!</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold mb-2">How soon will I receive my detox plan after payment?</h3>
+                    <p class="text-gray-600">You'll receive your complete detox plan via email immediately after your payment is confirmed. Our team will also reach out on WhatsApp within 2 hours.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold mb-2">Is this detox plan suitable for everyone?</h3>
+                    <p class="text-gray-600">Our detox plan is designed for most healthy adults. However, if you have any medical conditions, are pregnant or nursing, or are on medication, please consult your doctor before starting.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold mb-2">What kind of results can I expect?</h3>
+                    <p class="text-gray-600">Most participants report increased energy, better digestion, reduced bloating, clearer skin, and weight loss of 1-3kg after completing the 7-day detox plan.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold mb-2">Can I get a refund if I'm not satisfied?</h3>
+                    <p class="text-gray-600">We offer a 100% satisfaction guarantee. If you're not happy with the plan after trying it for 3 days, we'll refund your ₹99 - no questions asked.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="faqBtn" class="bg-primary text-white px-8 py-4 rounded-button text-lg font-semibold hover:bg-opacity-90 transition shadow-md whitespace-nowrap">Join the Challenge</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-16 md:py-24 bg-primary bg-opacity-5">
+        <div class="container mx-auto px-4 md:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Health?</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Join thousands of others who have already experienced the benefits of our ₹99 Detox Challenge.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button id="finalCtaBtn" class="bg-primary text-white px-8 py-4 rounded-button text-lg font-semibold hover:bg-opacity-90 transition shadow-md whitespace-nowrap">Start Now for Just ₹99</button>
+                <a href="#" class="border border-primary text-primary px-8 py-4 rounded-button text-lg font-semibold hover:bg-primary hover:bg-opacity-5 transition whitespace-nowrap">Learn More</a>
+            </div>
+            <p class="mt-6 text-gray-500">Limited time offer. Regular price: ₹499</p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-6">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <span>support@detoxchallenge.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                <i class="ri-whatsapp-line"></i>
+                            </div>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-6 h-6 flex items-center justify-center mr-3">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <span>Koramangala, Bangalore, India</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-gray-400">Join our community for daily health tips and inspiration.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">More Programs</h3>
+                    <p class="text-gray-400 mb-4">Looking for more comprehensive health and fitness plans?</p>
+                    <a href="#" class="text-primary hover:underline flex items-center">
+                        Visit our main website
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Detox Challenge. All rights reserved.</p>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-md mx-4 overflow-hidden">
+            <div class="relative">
+                <button id="closeModal" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 w-8 h-8 flex items-center justify-center">
+                    <i class="ri-close-line ri-lg"></i>
+                </button>
+                
+                <div class="p-6 bg-primary text-white">
+                    <h3 class="text-2xl font-bold">Start Your Transformation</h3>
+                    <p class="mt-1 opacity-90">Fill in your details to get your personalized detox plan</p>
+                </div>
+                
+                <form id="signupForm" class="p-6">
+                    <div class="space-y-4">
+                        <div>
+                            <label for="fullName" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enter your phone number" required>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label for="age" class="block text-sm font-medium text-gray-700 mb-1">Age</label>
+                                <input type="number" id="age" name="age" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Years" min="18" max="100" required>
+                            </div>
+                            
+                            <div>
+                                <label for="weight" class="block text-sm font-medium text-gray-700 mb-1">Weight (kg)</label>
+                                <input type="number" id="weight" name="weight" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="kg" min="30" max="200" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="goal" class="block text-sm font-medium text-gray-700 mb-1">Fitness Goal</label>
+                            <select id="goal" name="goal" class="custom-select w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary focus:border-primary outline-none pr-8" required>
+                                <option value="" disabled selected>Select your primary goal</option>
+                                <option value="detox">Detox</option>
+                                <option value="weight_loss">Weight Loss</option>
+                                <option value="energy_boost">Energy Boost</option>
+                                <option value="better_digestion">Better Digestion</option>
+                                <option value="clear_skin">Clear Skin</option>
+                                <option value="overall_health">Overall Health</option>
+                            </select>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" required>
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="text-sm text-gray-600">I agree to the <a href="#" class="text-primary hover:underline">Terms & Conditions</a> and <a href="#" class="text-primary hover:underline">Privacy Policy</a></span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-primary text-white mt-6 py-3 rounded-button font-semibold hover:bg-opacity-90 transition shadow-sm whitespace-nowrap">Proceed to Payment (₹99 only)</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('signupModal');
+            const closeModal = document.getElementById('closeModal');
+            const signupForm = document.getElementById('signupForm');
+            const heroBtn = document.getElementById('heroBtn');
+            const howItWorksBtn = document.getElementById('howItWorksBtn');
+            const whatYouGetBtn = document.getElementById('whatYouGetBtn');
+            const faqBtn = document.getElementById('faqBtn');
+            const finalCtaBtn = document.getElementById('finalCtaBtn');
+            
+            // Open modal function
+            function openModal() {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+            
+            // Close modal function
+            function closeModalFunc() {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Event listeners for buttons
+            [heroBtn, howItWorksBtn, whatYouGetBtn, faqBtn, finalCtaBtn].forEach(btn => {
+                if (btn) btn.addEventListener('click', openModal);
+            });
+            
+            // Close modal when clicking close button
+            closeModal.addEventListener('click', closeModalFunc);
+            
+            // Close modal when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModalFunc();
+                }
+            });
+            
+            // Form submission
+            signupForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Here you would normally collect form data and submit to Google Sheets
+                // For demo purposes, we'll just simulate a redirect to Razorpay
+                
+                const formData = new FormData(signupForm);
+                const formDataObj = {};
+                formData.forEach((value, key) => {
+                    formDataObj[key] = value;
+                });
+                
+                console.log('Form data:', formDataObj);
+                
+                // Simulate form submission and redirect
+                setTimeout(() => {
+                    alert('Form submitted successfully! Redirecting to payment...');
+                    // In a real implementation, redirect to Razorpay payment link
+                    // window.location.href = 'https://rzp.io/l/your-payment-link';
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
