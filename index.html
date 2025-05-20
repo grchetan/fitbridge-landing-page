@@ -73,10 +73,10 @@
 
         <!-- Desktop Nav -->
         <nav class="hidden md:flex space-x-8">
-          <a href="#" class="text-gray-700 hover:text-primary font-medium"
+          <a href="#hero" class="text-gray-700 hover:text-primary font-medium"
             >Home</a
           >
-          <a href="#" class="text-gray-700 hover:text-primary font-medium"
+          <a href="#recipe" class="text-gray-700 hover:text-primary font-medium"
             >Recipes</a
           >
           <a href="#" class="text-gray-700 hover:text-primary font-medium"
@@ -112,10 +112,14 @@
         id="mobileMenu"
         class="hidden md:hidden bg-white shadow-md px-4 pt-4 pb-6 space-y-3"
       >
-        <a href="#" class="block text-gray-700 hover:text-primary font-medium"
+        <a
+          href="#hero"
+          class="block text-gray-700 hover:text-primary font-medium"
           >Home</a
         >
-        <a href="#" class="block text-gray-700 hover:text-primary font-medium"
+        <a
+          href="#recipe"
+          class="block text-gray-700 hover:text-primary font-medium"
           >Recipes</a
         >
         <a href="#" class="block text-gray-700 hover:text-primary font-medium"
@@ -166,6 +170,7 @@
     <!-- Hero Section -->
     <section
       class="relative w-full h-[100vh] bg-cover bg-center flex items-center"
+      id="hero"
       style="background-image: url('assets/images/home-bg.jpg')"
     >
       <div class="absolute inset-0 hero-gradient"></div>
@@ -233,7 +238,7 @@
     </section>
 
     <!-- What You'll Get Section -->
-    <section id="bundle" class="py-16 bg-white">
+    <section id="bundle" class="py-16 bg-white" id="what-you-get">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800 mb-4">
@@ -385,7 +390,7 @@
     </section>
 
     <!-- Why You Need a Detox -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16 bg-gray-50" id="why-detox">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800 mb-4">
@@ -503,7 +508,7 @@
     </section>
 
     <!-- Who Is This Plan For -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white" id="who-is-this-plan-for">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800 mb-4">
@@ -639,7 +644,7 @@
     </section>
 
     <!-- Recipe Showcase -->
-    <section class="py-16 bg-gray-50">
+    <section class="py-16 bg-gray-50" id="recipe">
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800 mb-4">
